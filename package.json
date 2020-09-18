@@ -1,6 +1,6 @@
 {
   "name": "@chatopera/dotenv",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "Expand environment variables using dotenv",
   "main": "lib/main.js",
   "scripts": {
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/motdotla/dotenv-expand"
+    "url": "https://github.com/samurais/dotenv-expand"
   },
   "bugs": {
-    "url": "https://github.com/motdotla/dotenv-expand/issues"
+    "url": "https://github.com/samurais/dotenv-expand/issues"
   },
-  "author": "Scott Motte <mot@mot.la> (http://mot.la)",
+  "author": "Scott Motte <mot@mot.la> (http://mot.la), Hai Liang Wang <hain@chatopera.com> (https://www.chatopera.com)",
   "keywords": [
     "dotenv",
     "expand",

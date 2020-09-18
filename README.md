@@ -14,21 +14,24 @@ dotenv-expand is your tool.
 ## Install
 
 ```bash
-npm install dotenv --save
-npm install dotenv-expand --save
+npm install @chatopera/dotenv --save
 ```
 
 ## Usage
 
+Define vars in .env
+
+```
+OTHER_ENV=foo
+YOUR_ENV_VAR=$OTHER_ENV/bar
+```
+
 As early as possible in your application, require dotenv and dotenv-expand, and
-wrap dotenv-expand around dotenv.
+wrap dotenv expand around dotenv.
 
 ```js
-var dotenv = require('dotenv')
-var dotenvExpand = require('dotenv-expand')
-
-var myEnv = dotenv.config()
-dotenvExpand(myEnv)
+require('@chatopera/dotenv').config(process.cwd() + '/.env')
+process.env["YOUR_ENV_VAR"]
 ```
 
 See [test/.env](./test/.env) for examples of variable expansion in your `.env`
