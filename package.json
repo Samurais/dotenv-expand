@@ -1,5 +1,5 @@
 {
-  "name": "dotenv-expand",
+  "name": "@chatopera/dotenv",
   "version": "5.1.0",
   "description": "Expand environment variables using dotenv",
   "main": "lib/main.js",
@@ -22,11 +22,17 @@
     "variables"
   ],
   "license": "BSD-2-Clause",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  },
   "devDependencies": {
-    "dotenv": "^4.0.0",
     "lab": "^13.0.1",
     "should": "^11.2.1",
     "standard": "^9.0.2"
   },
-  "types": "./index.d.ts"
+  "types": "./index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
 }
